@@ -1,0 +1,211 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+*{
+  margin: 0;
+  padding:0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+:root{
+
+    --white: #fff;
+    --Black: #000;
+    --Primary-gray: #424242;
+    --secondry-gray: #f5f6f8;
+    --primary-Purple: #800080;
+    --secondry-Purple: #ff00ff;
+ }
+
+html, body {
+  height: 100%;
+  width:  100%;
+  scroll-behavior: smooth;
+}
+
+     /* gernal Styling */
+
+     /* for Remove underline from links */
+a{
+    text-decoration: none;
+}
+       /* for Remove Bullets from lists */
+li{
+    list-style: none;
+}
+    /* Set color for 3 headings */
+h1,h2,h4{
+    color: var(--Black);
+}
+
+    /* set font size for headings */
+
+h1{
+    font-size: 2.6rem;
+    font-family: "Roboto", sans-serif;
+}
+
+h2{
+    font-size: 1.5rem;
+}
+     /* only h3 have different color */
+h3{
+    font-size: 1.3rem;
+    color: var(--primary-Purple);
+}
+
+h4{
+    font-size: 1.2rem;
+}
+
+/* for paragraph Work */
+
+p{
+    font-size: 1rem;
+    color: var(--Primary-gray);
+    margin: 1rem 0 2rem 0;
+    max-width: 80%;
+}
+
+       /*  */
+
+.para{
+
+    max-width: 100%;
+
+}
+
+/* work for buttons */
+
+.primary-btn{
+
+    border: 1rem solid var(--primary-Purple);
+    background-color: var(--primary-Purple);
+    font-size: 1rem;
+    border-radius: 5rem;
+    color: var(--white);
+    padding: .6rem 1.5rem;
+}
+
+/* work for Border-buttons which we use data-type Attribute*/
+
+[data-type="inverted-btn"]{
+
+    background: transparent;
+    color: var(--secondry-Purple);
+}
+
+/* work for 3rd white button which we also use data-type Attribute*/
+
+[data-type="white-btn"]{
+
+    background-color: var(--white);
+    color: var(--secondry-Purple);
+}
+
+
+/* Hover work for primary-buttons */
+
+.primary-btn:hover{
+
+    filter: grayscale(1);
+}
+
+/* work for sections background color */
+
+.bg-dark-purple{
+
+    background-color: var(--primary-Purple);
+}
+
+.bg-light-purple{
+
+    background-color: var(--secondry-Purple);
+}
+
+.bg-black{
+
+    background-color: var(--Black);
+}
+
+.bg-White{
+
+    background-color: var(--white);
+}
+
+.bg-dark-gray{
+
+    background-color: var(--Primary-gray);
+}
+
+.bg-light-gray{
+
+    background-color: var(--secondry-gray);
+}
+
+
+/* working on other text colours  */
+
+.fill-white{
+
+    color: var(--white);
+
+}
+
+.fill-light-purple{
+
+    color: var(--secondry-Purple);
+
+}
+
+
+/* working for sections  */
+
+.section{
+
+    padding: 6rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* working on containers which inside the diffrent diffrent sections  */
+
+.container{
+
+    width: 80%;
+    margin: auto;
+    padding: 0 2rem;
+}
+
+/* working on Row or Colum containers which behave like row or colum inside the sections  */
+
+.row-container, .col-container{
+
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+
+
+}
+
+/* work for row container */
+
+.row-container{
+
+    gap: 7rem;
+}
+ 
+ /* work for col container */
+
+.col-container{
+
+    flex-direction: column;
+    gap: 3rem;
+    text-align: center;
+
+}
+
+
+
+
