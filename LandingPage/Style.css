@@ -1,0 +1,260 @@
+@import url('https://fonts.googleapis.com/css2?family=Bangers&display=swap');
+
+*{
+  margin: 0;
+  padding:0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  
+}
+
+html, body {
+  height: 100%;
+  width:  100%;
+}
+
+    /* Main container */
+
+.container{
+    height: 100vh;
+    background-color: rgb(231, 231, 231);
+    position: relative;
+    isolation: isolate;
+}
+
+   /* navbar work start */
+
+
+
+.navbar{
+    
+    height: 15vh;
+    width: 85%;
+    margin: auto;
+    border-bottom: 1px solid black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img{
+    height: 100px;
+}
+
+
+.navlist {
+    display: flex;
+    gap: 50px;
+    
+    
+}
+
+.navlist li{
+    list-style: none;
+    
+}
+
+.navlist a{
+
+    text-decoration: none;
+    font-size: 20px;
+    color: black;
+    
+   
+}
+
+.navlist a:hover{
+    color: rgb(255, 100, 0);
+}
+
+.btn{
+
+    font-size: 20px;
+    padding: 1rem 1.5rem 1rem 1.5rem;
+    align-items: center;
+    border-radius: 1.7rem ;
+    border: none;
+    background-color: rgb(255, 100, 0);
+    text-align: center;
+    color:white;
+    font-weight: 1rem;
+   
+
+}
+
+
+.btn:hover{
+
+    background-color: rgb(21, 9, 1);
+    color:white;
+}
+
+      /* navbar work end */
+
+
+      /* Hero section  work start */
+
+      .container::before{
+        content: "FITNESS";
+        position: absolute;
+        top: 27%;
+        left: 19%;
+        transform: translate(-52,52);
+        font-size: 330px;
+        font-family: "Bangers", system-ui;
+        letter-spacing: 20px;
+        color: rgb(199, 199, 199);
+        opacity: .3;
+        z-index: -1;
+        
+      }
+
+      .boy img{
+        height: 450px;
+        rotate: 5deg;
+        animation: scale 4s infinite ease-in-out;
+        
+      }
+
+      .Hero{
+        
+        height: 85vh;
+        width: 85%;
+        margin: auto;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+      }
+
+      .container h1{
+        font-size: 100px;
+        font-family: "Bangers", system-ui;
+        letter-spacing: 5px;
+      }
+
+      .content p{
+        font-size: 18px;
+        line-height: 30px;
+        max-width: 70%;
+        margin: 20px 0;
+      }
+
+     
+      .content button{
+
+     font-size: 18px;
+    padding: 18px 30px;
+    border: none;
+    background-color: rgb(255, 100, 0);
+    color:white;
+    
+
+      }
+
+      .content button:hover{
+        background-color: rgb(21, 9, 1);
+        color:white;
+        
+      }
+
+      .content .line{
+        width: 40%;
+        height: 10px;
+        background-color: rgb(255, 100, 0);
+        margin: 15px 0;
+        border-radius: 10px;
+      }
+
+      .icons{
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        top: 25%;
+        right: 60px;
+        transform: translate(-50,-50);
+        background-color: rgb(255, 100, 0);
+        gap: 30px;
+        padding: 50px 10px;
+        border-radius: 50px;
+        cursor: pointer;
+      }
+
+      .icons .fa-brands{
+        font-size: 27px;
+        color: white;
+      }
+
+      .boy{
+        position: relative;
+      }
+
+      .boy::before{
+        content: "";
+        background-image: url(/LandingPage/images/alexander-redl-d3bYmnZ0ank-unsplash-removebg-preview.png);
+        background-size: 300px;
+        background-position: bottom right;
+        width: 150px;
+        height: 150px;
+        position: absolute;
+        top: 0;
+        left: 180px;
+        border: 1px solid rgb(203, 203, 203);
+        border-radius: 50%;
+        animation: move 2s infinite ease-in-out;
+      }
+
+      .boy::after{
+        content: "";
+        background-image: url(/LandingPage/images/alexander-redl-d3bYmnZ0ank-unsplash-removebg-preview.png);
+        background-size: 300px;
+        background-position: top right;
+        width: 150px;
+        height: 150px;
+        position: absolute;
+        bottom: 0;
+        right: -40px;
+        border: 1px solid rgb(203, 203, 203);
+        border-radius: 50%;
+        animation: move 2s infinite ease-in-out;
+      }
+
+
+      /* animation work for boy img */
+
+      @keyframes scale{
+
+        0%{
+            transform: scale(.9);
+        }
+
+        50%{
+
+            transform: scale(1.05);
+        }
+
+        100%{
+
+            transform: scale(.9);
+        }
+      }
+
+      /* for circle imgs */
+
+      @keyframes move{
+
+        0%, 100%{
+            transform: translatey(0px);
+        }
+
+        50%{
+
+            transform: translatey(5px);
+        }
+
+       
+      }
+
+
+      /* Hero section  work end */
