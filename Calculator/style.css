@@ -1,0 +1,90 @@
+*{
+  margin: 0;
+  padding:0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 22px;
+  font-weight: bold;
+  color: #bb2734;
+  background-color: #c2d5da;
+  
+}
+
+html, body {
+  height: 100%;
+  width:  100%;
+}
+
+      /* for main container  */
+.container{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+    /* work start for calculator div  */
+
+.calculator{
+    border-color: #ecf0f3;
+    border-radius: 30px;
+    padding: 15px;
+    box-shadow: inset 5px 5px 12px #fff, 
+                  5px 5px 12px rgb(0, 0, 0,0.14);
+    display: grid;
+    grid-template-columns: repeat(4,70px);
+}
+
+    /* work end for calculator div  */
+
+    /* work start for calculator input field */
+
+.input{
+
+    grid-column: span 4;
+    width: 260px;
+    height: 70px;
+    background-color: #c2d5da;
+    border: none;
+    box-shadow: inset -5px -5px 12px #979696,
+                   inset 5px 5px 12px rgb(0, 0, 0,0.14);
+    border-radius: 30px;
+    outline:none;
+    text-align: end;
+    font-size: 50px;
+    margin: 40px auto;
+    padding: 10px;
+}
+
+/* work end for calculator input field */
+
+.input::placeholder{
+
+   color: #bb2734;
+
+}
+
+/* work start for calculator Buttons */
+
+button{
+    width: 48px;
+    height: 48px;
+    background-color: rgba(20, 20, 20, 0.14);
+    box-shadow:  inset -5px -5px 12px #919191,
+                   inset 5px 5px 12px rgb(0, 0, 0,0.14);
+    border-radius: 20px;
+    border: none;
+    margin: 8px auto;
+    color: #bb2734;
+}
+
+/* work end for calculator Buttons */
+
+
+/* work for equal button  */
+
+.equal{
+    width: 115px;
+    border-radius: 10px;
+    margin: 8px 12px;
+}
